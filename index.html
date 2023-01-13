@@ -49,6 +49,10 @@
         <div class="section header grid-container">
             <div class="picture-container grid-30">
                 <a href="https://sukimoe.cn"><img class="picture" src="https://avatars.githubusercontent.com/u/64982342"></a>
+                <div id="hitokoto" title="换一个~" style="width:100%;color:white;cursor:pointer;" onclick="getHitokoto()">
+                    <p style="text-align:left;">『<span id="hitokoto-content"></span>』</p>
+                    <p style="text-align:right;">——<span id="hitokoto-author"></span></p>
+                </div>
             </div>
             <div class="grid-70">
                 <h1 class="greeting en">Hi there, this is ZiAzusa!</h1>
@@ -309,7 +313,20 @@
         </div>
     </div>
     <script>
+        getHitokoto();
         var randbg = null;
+        function getHitokoto() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('get', 'https://v1.hitokoto.cn');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    let data = JSON.parse(xhr.responseText);
+                    document.getElementById("hitokoto-content").innerText = data.hitokoto;
+                    document.getElementById("hitokoto-author").innerText = data.from_who;
+                }
+            }
+            xhr.send();
+        }
         function handleRandBG(status) {
             if (status.checked) {
                 randbg = document.createElement("style");
