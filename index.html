@@ -8,28 +8,28 @@
     <title>About ZiAzusa</title>
     <style>
         .switch-button{
-            display: none;/*隐藏表单元素*/
+            display: none;
         }
-        .switch-button+label{/*+选择器选择紧跟“+”左边选择器的第一个元素*/
+        .switch-button+label{
             display: inline-block;
             position: relative;
             transition: all .3s;
-            width: 60px;
-            height: 30px;
+            width: 2.4em;
+            height: 1.2em;
             border: 1px solid #999;
             border-radius: 15px;
             background-color: #ccc;
         }
-        .switch-button:checked+label{/*选中表单后的样式，:checked表示checkbox被选中后的状态*/
+        .switch-button:checked+label{
             background-color: lightgreen;
         }
-        .switch-button+label::before{/*使用伪元素生成一个按钮*/
+        .switch-button+label::before{
             content: '';
             display: block;
-            height: 25px;
-            width: 25px;
+            height: calc(1.2em - 5px);
+            width: calc(1.2em - 5px);
             position: absolute;
-            border-radius: 25px;
+            border-radius: calc(1.2em - 5px);
             left: 2px;
             top: 2px;
             background-color: #fff;
