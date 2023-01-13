@@ -14,8 +14,8 @@
             display: inline-block;
             position: relative;
             transition: all .3s;
-            width: 2.4em;
-            height: 1.2em;
+            width: 3em;
+            height: 1.5em;
             border: 1px solid #999;
             border-radius: 15px;
             background-color: #ccc;
@@ -26,18 +26,18 @@
         .switch-button+label::before{
             content: '';
             display: block;
-            height: calc(1.2em - 5px);
-            width: calc(1.2em - 5px);
+            height: calc(1.5em - 5px);
+            width: calc(1.5em - 5px);
             position: absolute;
-            border-radius: calc(1.2em - 5px);
+            border-radius: calc(1.5em - 5px);
             left: 2px;
             top: 2px;
             background-color: #fff;
             box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
             transition: all .3s;
         }
-        .switch-button:checked+label::before{/*checkbox选中时按钮的样式*/
-            left: 32px;
+        .switch-button:checked+label::before{
+            left: calc(1.5em + 2px);
             transition:  all .2s linear;
         }
     </style>
@@ -65,11 +65,11 @@
                             <i aria-hidden="true" class="fa fa-map-marker"></i>
                             <span class="title">SukiMoe</span>
                         </div>
-                        <div>
-                            使用随机壁纸:<input type="checkbox" class="switch-button" id="switch-button" onclick="handleClick(this)">
-                            <label for="switch-button"></label>
-                        </div>
                     </a>
+                    <span style="display:inline">
+                        使用随机壁纸:<input type="checkbox" class="switch-button" id="switch-button" onclick="handleClick(this)">
+                        <label for="switch-button"></label>
+                   </span>
                 </div>
                 <div class="labels">
                     <div alt="browser" class="label">
