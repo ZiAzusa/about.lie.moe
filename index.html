@@ -6,6 +6,41 @@
     <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
     <link href="favicon.ico" type="image/x-icon" rel="icon" />
     <title>About ZiAzusa</title>
+    <style>
+        .switch-button{
+            display: none;/*隐藏表单元素*/
+        }
+        .switch-button+label{/*+选择器选择紧跟“+”左边选择器的第一个元素*/
+            display: inline-block;
+            position: relative;
+            transition: all .3s;
+            width: 60px;
+            height: 30px;
+            border: 1px solid #999;
+            border-radius: 15px;
+            background-color: #ccc;
+        }
+        .switch-button:checked+label{/*选中表单后的样式，:checked表示checkbox被选中后的状态*/
+            background-color: lightgreen;
+        }
+        .switch-button+label::before{/*使用伪元素生成一个按钮*/
+            content: '';
+            display: block;
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            border-radius: 25px;
+            left: 2px;
+            top: 2px;
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+            transition: all .3s;
+        }
+        .switch-button:checked+label::before{/*checkbox选中时按钮的样式*/
+            left: 32px;
+            transition:  all .2s linear;
+        }
+    </style>
 </head>
 <body>
     <div class="main-container" id="mainc">
@@ -29,6 +64,10 @@
                         <div alt="home" class="label">
                             <i aria-hidden="true" class="fa fa-map-marker"></i>
                             <span class="title">SukiMoe</span>
+                        </div>
+                        <div>
+                            使用随机壁纸:<input type="checkbox" class="switch-button" id="switch-button" onclick="handleClick(this)">
+                            <label for="switch-button"></label>
                         </div>
                     </a>
                 </div>
