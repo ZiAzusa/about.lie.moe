@@ -14,8 +14,8 @@
             display: inline-block;
             position: relative;
             transition: all .3s;
-            width: 3em;
-            height: 1.5em;
+            width: 2em;
+            height: 1em;
             border: 1px solid #999;
             border-radius: 15px;
             background-color: #ccc;
@@ -26,10 +26,10 @@
         .switch-button+label::before{
             content: '';
             display: block;
-            height: calc(1.5em - 5px);
-            width: calc(1.5em - 5px);
+            height: calc(1em - 5px);
+            width: calc(1em - 5px);
             position: absolute;
-            border-radius: calc(1.5em - 5px);
+            border-radius: calc(1em - 5px);
             left: 2px;
             top: 2px;
             background-color: #fff;
@@ -37,7 +37,7 @@
             transition: all .3s;
         }
         .switch-button:checked+label::before{
-            left: calc(1.5em + 2px);
+            left: calc(0.5em + 2px);
             transition:  all .2s linear;
         }
     </style>
