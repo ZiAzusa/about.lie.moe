@@ -279,7 +279,9 @@
         var normal_title = document.title;
         document.addEventListener('visibilitychange', function () {
             if (document.visibilityState == "hidden") {
-                document.title = "|ω・) 看不到咱~看不到咱~";
+		        setTimeout(function () {
+	                document.title = "|ω・) 看不到咱~看不到咱~";
+                }, 3000);
             } else {
                 document.title = "(っ °Д °;)っ 啊呀，被发现惹！";
                 setTimeout(function () {
