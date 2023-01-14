@@ -276,6 +276,17 @@
     <script>
         getHitokoto();
         var randbg = null;
+        var normal_title = document.title;
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState == "hidden") {
+                document.title = "|ω・) 看不到咱~看不到咱~";
+            } else {
+                document.title = "(っ °Д °;)っ 啊呀，被发现惹！;
+                setTimeout(function () {
+	                document.title = normal_title;
+                }, 3000);
+            }
+        });
         function getHitokoto() {
             var xhr = new XMLHttpRequest();
             xhr.open('get', 'https://v1.hitokoto.cn');
