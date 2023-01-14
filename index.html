@@ -142,20 +142,22 @@
                         <span class="link">@ZiAzusa</span>
                     </a>
                 </li>
-                <li class="identity">
-                    <a href="https://telegram.me/ZiAzusa" target="_blank">
-                        <i aria-hidden="true" class="fa fa-telegram"></i>
-                        <span class="where">Telegram</span>
-                        <span class="link">@ZiAzusa</span>
-                    </a>
-                </li>
-                <li class="identity">
-                    <a href="https://twitter.com/Zi_Azusa_" target="_blank">
-                        <i aria-hidden="true" class="fa fa-twitter"></i>
-                        <span class="where">Twitter</span>
-                        <span class="link">@Zi_Azusa_</span>
-                    </a>
-                </li>
+                <div id="toRemove">
+                    <li class="identity">
+                        <a href="https://telegram.me/ZiAzusa" target="_blank">
+                            <i aria-hidden="true" class="fa fa-telegram"></i>
+                            <span class="where">Telegram</span>
+                            <span class="link">@ZiAzusa</span>
+                        </a>
+                    </li>
+                    <li class="identity">
+                        <a href="https://twitter.com/Zi_Azusa_" target="_blank">
+                            <i aria-hidden="true" class="fa fa-twitter"></i>
+                            <span class="where">Twitter</span>
+                            <span class="link">@Zi_Azusa_</span>
+                        </a>
+                    </li>
+                </div>
                 <li class="identity">
                     <a href="https://space.bilibili.com/399757315" target="_blank">
                         <i aria-hidden="true" class="fa fa-tv"></i>
@@ -277,6 +279,9 @@
         getHitokoto();
         var randbg = null;
         var normal_title = document.title;
+        if (navigator.language == "zh-CN" || navigator.language == "zh-cn") {
+            document.getElementById("toRemove").remove();
+        }
         document.addEventListener('visibilitychange', function () {
             if (document.visibilityState == "hidden") {
                 setTimeout(function () {
