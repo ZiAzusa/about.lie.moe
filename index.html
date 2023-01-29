@@ -331,7 +331,11 @@
         function handleRandBG(status) {
             if (status.checked) {
                 randbg = document.createElement("style");
-                randbg.innerText = 'html:before{background:url(https://imgapi.nahida.fun/random) no-repeat;background-size:cover;background-position:center 0;content:"";width:100%;height:100%;top:0;left:0;z-index:-1;position:fixed;}';
+                if (navigator.language == "zh-CN" || navigator.language == "zh-cn") {
+                    randbg.innerText = 'html:before{background:url(https://imgapi.nahida.fun/random?cn=true) no-repeat;background-size:cover;background-position:center 0;content:"";width:100%;height:100%;top:0;left:0;z-index:-1;position:fixed;}';
+                } else {
+                    randbg.innerText = 'html:before{background:url(https://imgapi.nahida.fun/random) no-repeat;background-size:cover;background-position:center 0;content:"";width:100%;height:100%;top:0;left:0;z-index:-1;position:fixed;}';
+                }
                 document.body.appendChild(randbg);
             } else {
                 randbg.remove();
