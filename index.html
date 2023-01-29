@@ -300,6 +300,8 @@
     <script>
         getHitokoto();
         var randbg = null;
+        var bgSrc = null;
+        var bgBlock = false;
         var normal_title = document.title;
         if (navigator.language == "zh-CN" || navigator.language == "zh-cn") {
             document.getElementById("toRemove").remove();
@@ -330,12 +332,21 @@
         }
         function handleRandBG(status) {
             if (status.checked) {
-                randbg = document.createElement("style");
-                if (navigator.language == "zh-CN" || navigator.language == "zh-cn") {
-                    randbg.innerText = 'html:before{background:url(https://imgapi.nahida.fun/random?cn=true&' + String(Math.random()) + ') no-repeat;background-size:cover;background-position:center 0;content:"";width:100%;height:100%;top:0;left:0;z-index:-1;position:fixed;}';
-                } else {
-                    randbg.innerText = 'html:before{background:url(https://imgapi.nahida.fun/random?' + String(Math.random()) + ') no-repeat;background-size:cover;background-position:center 0;content:"";width:100%;height:100%;top:0;left:0;z-index:-1;position:fixed;}';
+                if (!bgBlock) {
+                    bgBlock = true;
+                    var bgImage = new Image();
+                    bgImage.onload = (() => {
+                        bgBlock = false;
+                    });
+                    if (navigator.language == "zh-CN" || navigator.language == "zh-cn") {
+                        bgSrc = 'https://imgapi.nahida.fun/random?cn=true&' + String(Math.random());
+                    } else {
+                        bgSrc = 'https://imgapi.nahida.fun/random?' + String(Math.random());
+                    }
+                    bgImage.src = bgSrc;
                 }
+                randbg = document.createElement("style");
+                randbg.innerText = 'html:before{background:url(' + bgSrc + ') no-repeat;background-size:cover;background-position:center 0;content:"";width:100%;height:100%;top:0;left:0;z-index:-1;position:fixed;}';
                 document.body.appendChild(randbg);
             } else {
                 randbg.remove();
