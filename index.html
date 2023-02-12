@@ -339,11 +339,7 @@
                     bgImage.onload = (() => {
                         bgBlock = false;
                     });
-                    if (navigator.language == "zh-CN" || navigator.language == "zh-cn") {
-                        bgSrc = 'https://imgapi.nahida.fun/random?cn=true&' + String(Math.random());
-                    } else {
-                        bgSrc = 'https://imgapi.nahida.fun/random?' + String(Math.random());
-                    }
+                    bgSrc = 'https://imgapi.nahida.fun/random?host=od&' + String(Math.random());
                     bgImage.src = bgSrc;
                 }
                 randbg = document.createElement("style");
