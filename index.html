@@ -107,12 +107,11 @@
                     <p>
                         <b>♪(´▽｀)咱是个什么样的人呢？</b>
                         <br />一切！兴趣使然！All in！
-                        <br />关于交友方面，咱觉得，友谊是相互的，需要尊重的，而且是长时间维持的过程~
-                        <br />所以咱不太喜欢一上来就要面基，或询问太多隐私、问东问西的人o((>ω< ))o
-                        <br />而且…说实话，咱现实的社交恐惧挺严重的，基本就把自己封闭在小房间里惹…
+                        <br />关于交友方面，咱觉得，友谊是相互的，需要尊重的，而且是要有长时间维持的过程~
+                        <br />所以咱不太喜欢一上来就问东问西或要面基的人o((>ω< ))o
+                        <br />而且…说实话，咱现实的社交恐惧挺严重的…
                         <br />但！咱也要通过自己的方式帮助别人！
-                        <br />有人说咱挺笨的…唔，咱自己也觉得…
-                        <br />但，笨点有什么不好嘛！快乐才最最重要！
+                        <!--<br />有人说咱挺笨的…嘛，傻人有傻福！-->
                     </p>
                 </div>
             </ul>
@@ -120,8 +119,8 @@
                 <div class="self-desc">
                     <p>
                         <b>╰(￣ω￣ｏ)咱的基本原则嘛~</b>
-                        <br />网上关系一定要维系于网上！因为每一段关系，每一次相逢，都弥足珍贵！
-                        <br />网上关系也请止于网上，要为彼此留下遐想的空间哦！
+                        <br />每一段关系，每一次相逢，都弥足珍贵！
+                        <br />但，网上关系也请止于网上，要为彼此留下遐想的空间哦！
                         <br />当然如果你难受惹，遇到烦心事惹，都欢迎来找咱！咱会尽力为你想想解决办法，如果想不出来咱也会做个好的倾听者的！希望咱能温暖到你！
                         <br />I sincerely love the colorful world,
                         <br />And the lovely people living in.
@@ -141,22 +140,6 @@
                         <span class="link">@ZiAzusa</span>
                     </a>
                 </li>
-                <div id="toRemove">
-                    <li class="identity">
-                        <a href="https://telegram.me/ZiAzusa" target="_blank">
-                            <i aria-hidden="true" class="fa fa-telegram"></i>
-                            <span class="where">Telegram</span>
-                            <span class="link">@ZiAzusa</span>
-                        </a>
-                    </li>
-                    <li class="identity">
-                        <a href="https://twitter.com/Zi_Azusa_" target="_blank">
-                            <i aria-hidden="true" class="fa fa-twitter"></i>
-                            <span class="where">Twitter</span>
-                            <span class="link">@Zi_Azusa_</span>
-                        </a>
-                    </li>
-                </div>
                 <li class="identity">
                     <a href="https://space.bilibili.com/399757315" target="_blank">
                         <i aria-hidden="true" class="fa fa-tv"></i>
@@ -301,9 +284,6 @@
         var bgSrc = null;
         var bgBlock = false;
         var normal_title = document.title;
-        if (navigator.language == "zh-CN" || navigator.language == "zh-cn") {
-            document.getElementById("toRemove").remove();
-        }
         document.addEventListener('visibilitychange', function () {
             if (document.visibilityState == "hidden") {
                 setTimeout(function () {
