@@ -297,7 +297,7 @@
         });
         function getHitokoto() {
             var xhr = new XMLHttpRequest();
-            xhr.open('get', 'https://v1.hitokoto.cn');
+            xhr.open('get', 'https://v1.hitokoto.cn/?' + Math.random());
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === 4) {
                     let data = JSON.parse(xhr.responseText);
