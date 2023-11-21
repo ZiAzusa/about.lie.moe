@@ -9,17 +9,18 @@
     <link href="favicon.ico" rel="shortcut icon" />
     <title>魂归梓里的叙事诗</title>
 </head>
-    <div style="position:fixed;width:100vw;height:100vh;background:#fff;color:#000;display:block !important;top:0;left:0;z-index:100;padding:16px;">
+<body style="overflow:hidden;margin:0;padding:0;">
+    <div style="position:fixed;width:100vw;height:100vh;background:#fff;color:#000;display:block;top:0;left:0;z-index:100;padding:16px;">
         <p style="font-size:larger;">No Signal<span onclick="showIt(this);" style="color:#519bff;">...</span></p>
         <script>
             function showIt(node) {
                 document.body.style = null;
+                document.getElementById("mainc").style = null;
                 node.parentNode.parentNode.remove();
             }
         </script>
     </div>
-<body style="display:none;overflow:hidden;margin:0;padding:0;">
-    <div class="main-container" id="mainc">
+    <div class="main-container" id="mainc" style="display:none;">
         <div class="section header grid-container">
             <div class="picture-container grid-30">
                 <a href="https://about.lie.moe"><img class="picture" src="https://avatars.githubusercontent.com/u/64982342"></a>
