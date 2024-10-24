@@ -308,7 +308,7 @@
                 <!--Page's style referred to <a href="//about.moe.best" target="_blank"><span class="link">about.moe.best</span></a>, if something is forbidden, please contact me to remove.-->
             </div>
             <div class="acknowledgementC"><!--<i aria-hidden="true" class="fa fa-copy" style="font-size:smaller;"></i>-->
-                Copyright &copy; 2018-2024: ZiAzusa. All Rights Reserved. Illustrations have their own licenses.
+                Copyright &copy; 2018-<span class="this-year">Now</span>: ZiAzusa. All Rights Reserved. Illustrations have their own licenses.
                 <br />Registration:
                 <a href="https://icp.gov.moe/?keyword=20233366" target="_blank" style="color:#444444;">萌ICP备20233366号</a>
                 *:
@@ -322,6 +322,7 @@
         console.log("Wishing no estrangement between people,");
         console.log("And that everything fine in the world can be shared.");
         console.log("If I could be a normal girl, I would do my best to love this world.");
+        document.querySelector(".this-year").innerText = (new Date()).getFullYear();
         var randbg = null;
         var bgSrc = null;
         var bgBlock = false;
