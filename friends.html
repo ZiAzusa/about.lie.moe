@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -17,31 +17,53 @@
       font-weight: 600;
       color: #333;
     }
-    .intro-card {
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
       max-width: 1000px;
-      margin: 0 auto 30px auto;
+      margin: auto;
+    }
+    .card {
       background: #fff;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       padding: 20px;
+      text-decoration: none;
+      color: inherit;
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 20px;
+      transition: all 0.25s ease;
     }
-    .intro-card img {
-      width: 100px;
-      height: 100px;
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    .avatar, .intro-card img {
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
       object-fit: cover;
       flex-shrink: 0;
     }
+    .name {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #222;
+    }
+    .slogan, .intro-text div {
+      font-size: 14px;
+      color: #666;
+    }
     .intro-text {
       flex: 1;
-      font-size: 15px;
-      color: #333;
+      display: flex;
+      flex-direction: column;
     }
     .intro-text .row {
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     .intro-text .label {
       font-weight: 600;
@@ -55,51 +77,26 @@
     .intro-text a:hover {
       text-decoration: underline;
     }
-    .links {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: auto;
+    .intro-card {
+      grid-column: 1 / -1;
     }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      text-align: center;
-      padding: 20px;
-      transition: all 0.25s ease;
-      cursor: pointer;
-      text-decoration: none;
-      color: inherit;
-    }
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    }
-    .avatar {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-    }
-    .name {
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 6px;
-      color: #222;
-    }
-    .slogan {
-      font-size: 14px;
-      color: #666;
+    @media (max-width: 600px) {
+      .card, .intro-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .avatar, .intro-card img {
+        margin-bottom: 12px;
+        margin-right: 0;
+      }
     }
   </style>
 </head>
 <body>
   <h1>友情链接</h1>
   <div class="links">
-    <div class="intro-card">
+    <div class="intro-card card">
       <img src="https://avatars.githubusercontent.com/u/64982342?v=4" alt="avatar">
       <div class="intro-text">
         <div class="row"><span class="label">名称：</span>霜凝梓漪，雪偕遥泠</div>
@@ -110,13 +107,17 @@
     </div>
     <a class="card" href="https://www.iyoroy.cn/" target="_blank">
       <img class="avatar" src="https://www.iyoroy.cn/usr/uploads/2025/07/1725584663.jpg" alt="avatar">
-      <div class="name">悠笙の开发日记</div>
-      <div class="slogan">『愿世间万物都能被温柔以待』</div>
+      <div>
+        <div class="name">悠笙の开发日记</div>
+        <div class="slogan">『愿世间万物都能被温柔以待』</div>
+      </div>
     </a>
     <a class="card" href="https://ceale.moe/" target="_blank">
       <img class="avatar" src="https://avatars.githubusercontent.com/u/93030615?v=4" alt="avatar">
-      <div class="name">筱莱Ceale的摇曳时间</div>
-      <div class="slogan">『也许是只绵羊（？）』</div>
+      <div>
+        <div class="name">筱莱Ceale的摇曳时间</div>
+        <div class="slogan">『也许是只绵羊（？）』</div>
+      </div>
     </a>
   </div>
 </body>
