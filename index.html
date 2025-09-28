@@ -1,385 +1,332 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-Type" content="text/html" />
-    <meta name="baidu-site-verification" content="codeva-aKhScCX65U" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <link href="assets/stylesheets/style.min.css?v8" type="text/css" rel="stylesheet" />
-    <link href="favicon.ico" rel="shortcut icon" />
-    <title>霜凝梓漪，雪偕遥泠</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html" />
+  <meta name="baidu-site-verification" content="codeva-aKhScCX65U" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link href="assets/stylesheets/style.min.css?v8" type="text/css" rel="stylesheet" />
+  <link href="favicon.ico" rel="shortcut icon" />
+  <title>霜凝梓漪，雪偕遥泠</title>
 </head>
 <body style="overflow:hidden;margin:0;padding:0;">
-    <div style="position:fixed;width:100vw;height:100vh;background:#fff;color:#000;display:block;top:0;left:0;z-index:100;padding:16px;">
-        <p style="font-size:larger;">0x000000E2<br />MANUALLY_INITIATED_CRASH</p>
-        <p style="font-size:larger;cursor:pointer;"><a onclick="showIt(this);" style="color:#519bff;">请点击这里修复。</a></p>
-        <script>
-            function showIt(node) {
-                document.body.style = null;
-                document.getElementById("mainc").style = null;
-                node.parentNode.parentNode.remove();
-            }
-        </script>
-    </div>
-    <div class="main-container" id="mainc" style="display:none;">
-        <div class="section header grid-container">
-            <div class="picture-container grid-30">
-                <a href="https://about.lie.moe"><img class="picture" src="https://avatars.githubusercontent.com/u/64982342"></a>
-                <div class="greeting hitikoto" title="换一个~" style="width:100%;color:white;cursor:pointer;" onclick="getHitokoto()">
-                    <p style="text-align:left;">『<span id="hitokoto-content">Loading…</span>』</p>
-                    <p style="text-align:right;">——<span id="hitokoto-author">加载中~</span></p>
-                </div>
-            </div>
-            <div class="grid-70">
-                <h1 class="greeting en">Hi there, this is ZiAzusa!</h1>
-                <h1 class="greeting cn">
-                    <small class="prefix"><span class="face">\(≧▽≦)/</span>你好！</small><span class="name no-wrap">我是梓漪！</span>
-                </h1>
-                <div class="labels">
-                    <!--<a href="https://moeloli.cyou" target="_blank">
-                        <div alt="home" class="label">
-                            <i aria-hidden="true" class="fa fa-map-marker"></i>
-                            <span class="title">MoeLoli Seeing You</span>
-                        </div>
-                    </a>-->
-                    <a href="https://about.lie.moe" target="_blank">
-                        <div alt="Home" class="label">
-                            <i aria-hidden="true" class="fa fa-map-marker"></i>
-                            <span class="title">Lie.Moe</span>
-                        </div>
-                    </a>
-                    <div alt="Wallpaper" class="label">
-                        <i aria-hidden="true" class="fa fa-photo" style="vertical-align:middle;"></i>
-                        <span class="title">
-                            <input type="checkbox" class="switch-button" id="switch-button" onclick="handleRandBG(this)">
-                            <label for="switch-button" style="vertical-align:middle;"></label>
-                        </span>
-                    </div>
-                </div>
-                <div class="labels">
-                    <div alt="Browser" class="label">
-                        <i aria-hidden="true" class="fa fa-edge"></i>
-                        <span class="content">Chromium</span>
-                    </div>
-                    <div alt="Editor" class="label">
-                        <i aria-hidden="true" class="fa fa-pencil-square-o"></i>
-                        <span class="content">VSCode</span>
-                    </div>
-                    <div alt="Indentation" class="label">
-                        <i aria-hidden="true" class="fa fa-angle-double-right"></i>
-                        <span class="content">4 Spaces</span>
-                    </div>
-                    <div alt="Whoami" class="label">
-                        <i aria-hidden="true" class="fa fa-coffee"></i>
-                        <span class="content">CTFer</span>
-                    </div>
-                    <div alt="Studying" class="label">
-                        <i aria-hidden="true" class="fa fa-book"></i>
-                        <span class="content">Web</span>
-                    </div>
-
-                </div>
-                <div class="labels">
-                    <div alt="Platforms" class="label">
-                        <i aria-hidden="true" class="fa fa-windows"></i>
-                        <span class="content">11</span>
-                    </div>
-                    <div class="label next">
-                        <i aria-hidden="true" class="fa fa-apple"></i>
-                        <span class="content">iOS</span>
-                    </div>
-                    <div class="label next">
-                        <i aria-hidden="true" class="fa fa-android"></i>
-                        <span class="content">Android</span>
-                    </div>
-                    <div class="label next">
-                        <i aria-hidden="true" class="fa fa-linux"></i>
-                        <span class="content">CentOS & Ubuntu</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section identity-category grid-container">
-            <h2 class="title">
-                <i aria-hidden="true" class="fa fa-chevron-right"></i> Me
-                <span class="no-wrap">
-                    <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>ISFP</small>
-                    <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>双子</small>
-                    <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>乐子人</small>
-                    <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>摆烂ing</small>
-                </span>
-            </h2>
-            <ul class="identities grid-50">
-                <div class="self-desc">
-                    <p>
-                        <b>(*^▽^*)也有人称呼我为梓、阿梓~</b>
-                        <br />当然…叫“木辛”也不是不可以（？
-                    </p>
-                    <p>
-                        <b>(｡･∀･)ﾉﾞ很高兴认识你！</b>
-                        <br />我想成为一个温柔且坚定、平凡且自由的人类个体。
-                        <!----愿人与人之间没有隔阂，愿世间的美好得以共享。-->
-                    </p>
-                    <p>
-                        <b>♪(´▽｀)我是个什么样的人呢？</b>
-                        <br />一切！兴趣使然！
-                        <br />交友方面，个人觉得，友谊是相互的，需要尊重的，而且是要有长时间维持的过程。
-                        <br />学习方面，我是一个会为了感兴趣的知识全力以赴的人。
-                        <br />生活方面，嗯...能摆就摆（？
-                        <br />诶嘿~
-                    </p>
-                </div>
-            </ul>
-            <ul class="identities grid-50">
-                <div class="self-desc">
-                    <p>
-                        <b>欢迎来找我！</b>
-                    </p>
-                </div>
-                <li class="identity">
-                    <a href="https://blog.lie.moe" target="_blank">
-                        <i aria-hidden="true" class="fa fa-rss"></i>
-                        <span class="where">Blog</span>
-                        <span class="link">梓漪の窝</span>
-                    </a>
-                </li>
-                <li class="identity">
-                    <a href="mailto:zi@lie.moe" target="_blank">
-                        <i aria-hidden="true" class="fa fa-envelope"></i>
-                        <span class="where">Mail</span>
-                        <span class="link">zi@lie.moe</span>
-                    </a>
-                </li>
-                <li class="identity">
-                    <a href="https://github.com/ZiAzusa" target="_blank">
-                        <i aria-hidden="true" class="fa fa-github"></i>
-                        <span class="where">Github</span>
-                        <span class="link">@ZiAzusa</span>
-                    </a>
-                </li>
-                <li class="identity">
-                    <a href="https://qm.qq.com/q/X9FUv9C6c4" target="_blank">
-                        <i aria-hidden="true" class="fa fa-user"></i>
-                        <span class="where">QQ</span>
-                        <span class="link">2488955878</span>
-                    </a>
-                </li>
-                <li class="identity">
-                    <a href="https://space.bilibili.com/399757315" target="_blank">
-                        <i aria-hidden="true" class="fa fa-tv"></i>
-                        <span class="where">Bilibili</span>
-                        <span class="link">霜泛梓桁</span>
-                    </a>
-                </li>
-                <li class="identity">
-                    <a href="https://233azusa.lofter.com" target="_blank">
-                        <i aria-hidden="true" class="fa fa-book"></i>
-                        <span class="where">Lofter</span>
-                        <span class="link">魂归梓里</span>
-                    </a>
-                </li>
-                <!--<li class="identity">
-                    <a href="https://intro.lie.moe" target="_blank">
-                        <i aria-hidden="true" class="fa fa-tag"></i>
-                        <span class="where">More About My GitHub</span>
-                        <span class="link"></span>
-                    </a>
-                </li>-->
-            </ul>
-        </div>
-        <div class="section identity-category grid-container">
-            <h2 class="title">
-                <i aria-hidden="true" class="fa fa-chevron-right"></i> Be Into Everything!
-                <span class="no-wrap">
-                    <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>Moe</small>
-                    <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>ACGN</small>
-                    <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>Computer Science</small>
-                </span>
-            </h2>
-            <ul class="identities grid-50">
-                <div class="self-desc">
-                    <p>
-                        <b>我玩：</b>
-                        <br />明日方舟 / Project Sekai / BanG Dream! / 崩坏：星穹铁道 / 绝区零 / 蔚蓝档案 / 重返未来：1999 / Minecraft / Phigros / Arcaea / Rotaeno ...
-                    </p>
-                </div>
-                <div class="self-desc">
-                    <p>
-                        <b>我推：</b>
-                        <br />25点，Nightcord见 [晓山瑞希 / 宵崎奏 / 东云绘名 / 朝比奈真冬] / Ave Mujica [丰川祥子 / 若叶睦] / MyGO!!!!! [高松灯 / 千早爱音] / 美树沙耶香 / 佐仓杏子 / 铃兰 / 绮良 / 艾雅法拉 / 水月 / 青衣 / 可莉 / 芙宁娜 / 七七 / 白洲梓 / 37 / 乐正绫 / 洛天依 / 可不 / 初音未来 ...
-                        <br />// 你能回到过去，救救那个还没看Ave Mujica的我吗...
-                        <br />// 诶不是，这家伙怎么见一个爱一个？
-                    </p>
-                </div>
-            </ul>
-            <ul class="identities grid-50">
-                <div class="self-desc">
-                    <p>
-                        <b>我可能会分享：</b>
-                        <br />发癫 / 发病 / 摘抄 / 美图 / 日常 / oc / cos ...
-                    </p>
-                </div>
-                <div class="self-desc">
-                    <p>
-                        <b>我正在学习：</b>
-                        <br />CTF Web方向&Misc方向 / Golang / JavaScript / Vue / CSS / 板绘 ...
-                        <br />// Stay hungry, stay foolish.
-                    </p>
-                </div>
-            </ul>
-        </div>
-        <div class="section identity-category grid-container">
-            <h2 class="title">
-                <i aria-hidden="true" class="fa fa-chevron-right"></i> No Game No Life!
-                <span class="no-wrap">
-                    <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>Otaku</small>
-                    <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>音游人</small>
-                    <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>单机</small>
-                </span>
-            </h2>
-            <ul class="identities grid-50">
-                <!--<li class="identity">
-                    <a href="https://www.taptap.cn/user/356934468" target="_blank">
-                        <i aria-hidden="true" class="fa fa-share-alt"></i>
-                        <span class="where">TapTap<span class="status"> 国区</span></span>
-                        <span class="link">356934468</span>
-                    </a>
-                </li>-->
-                <li class="identity">
-                    <i aria-hidden="true" class="fa fa-mobile"></i>
-                    <span class="where">崩坏：星穹铁道<span class="status"> 官服</span></span>
-                    <span class="link">142647586</span>
-                </li>
-                <li class="identity">
-                    <i aria-hidden="true" class="fa fa-mobile"></i>
-                    <span class="where">原神<span class="status"> 官服</span></span>
-                    <span class="link">179260453</span>
-                </li>
-                <!--<li class="identity">
-                    <i aria-hidden="true" class="fa fa-mobile"></i>
-                    <span class="where">蔚蓝档案<span class="status"> 国际服</span></span>
-                    <span class="link"></span>
-                </li>-->
-                <li class="identity">
-                    <i aria-hidden="true" class="fa fa-mobile"></i>
-                    <span class="where">明日方舟<span class="status"> 官服</span></span>
-                    <span class="link">梓漪#9201</span>
-                </li>
-                <li class="identity">
-                    <i aria-hidden="true" class="fa fa-mobile"></i>
-                    <span class="where">绝区零<span class="status"> 官服</span></span>
-                    <span class="link">22371920</span>
-                </li>
-                <!--<li class="identity">
-                    <i aria-hidden="true" class="fa fa-mobile"></i>
-                    <span class="where">战双帕弥什<span class="status"> 官服</span></span>
-                    <span class="link">41492255</span>
-                </li>-->
-            </ul>
-            <ul class="identities grid-50">
-                <li class="identity">
-                    <a href="https://steamcommunity.com/id/ziazusa/" target="_blank">
-                        <i aria-hidden="true" class="fa fa-steam"></i>
-                        <span class="where">Steam<span class="status"> 国区</span></span>
-                        <span class="link">魂归梓里</span>
-                    </a>
-                </li>
-                <li class="identity">
-                    <i aria-hidden="true" class="fa fa-music"></i>
-                    <span class="where">Arcaea<span class="status"> PTT:10.21</span></span>
-                    <span class="link">ZiAzusa</span>
-                </li>
-                <li class="identity">
-                    <i aria-hidden="true" class="fa fa-music"></i>
-                    <span class="where">Phigros<span class="status"> RKS:14.09</span></span>
-                    <span class="link">梓酱Azusa</span>
-                </li>
-                <li class="identity">
-                    <i aria-hidden="true" class="fa fa-music"></i>
-                    <span class="where">Project Sekai<span class="status"> 国服</span></span>
-                    <span class="link">7490204973431626511</span>
-                </li>
-            </ul>
-        </div>
-        <!--<div class="section identity-category grid-container">
-            <ul class="identities grid-50">
-                <div class="self-desc">
-                    <p>
-                        <b>所以...我这辈子究竟说过多少谎言？又有多少真话呢？</b>
-                        <br /><a href="https://lie.moe" target="_blank" style="color:#519bff;">萌える嘘。</a>
-                    </p>
-                </div>
-            </ul>
-        </div>-->
-        <div class="section">
-            <div class="acknowledgementA"><i aria-hidden="true" class="fa fa-code-fork"></i>
-                This is a fork of <a href="//github.com/amphineko/amphineko" target="_blank"><span class="link">futa.moe/amphineko</span></a>, a biopage by Naoki Rinmous.
-            </div>
-            <div class="acknowledgementB"><i aria-hidden="true" class="fa fa-plug" style="font-size:smaller;"></i>
-                Some functions powered by these APIs, thanks. Wallpaper: <a href="//imgapi.lie.moe/help" target="_blank"><span class="link">萌える嘘</span></a>; Saying: <a href="//hitokoto.cn" target="_blank"><span class="link">Hitokoto</span></a>.
-                <!--Page's style referred to <a href="//about.moe.best" target="_blank"><span class="link">about.moe.best</span></a>, if something is forbidden, please contact me to remove.-->
-            </div>
-            <div class="acknowledgementC"><!--<i aria-hidden="true" class="fa fa-copy" style="font-size:smaller;"></i>-->
-                Copyright &copy; 2018-<span class="this-year">Now</span>: ZiAzusa. All Rights Reserved. Illustrations have their own licenses.
-                <br />Registration:
-                <a href="https://icp.gov.moe/?keyword=20233366" target="_blank" style="color:#444444;">萌ICP备20233366号</a>
-            </div>
-            <!--<div class="copyright"></div>-->
-        </div>
-    </div>
+  <div style="position:fixed;width:100vw;height:100vh;background:#fff;color:#000;display:block;top:0;left:0;z-index:100;padding:16px;">
+    <p style="font-size:larger;">0x000000E2<br />MANUALLY_INITIATED_CRASH</p>
+    <p style="font-size:larger;cursor:pointer;"><a onclick="showIt(this);" style="color:#519bff;">请点击这里修复。</a></p>
     <script>
-        getHitokoto();
-        console.log("Wishing no estrangement between people,");
-        console.log("And that everything fine in the world can be shared.");
-        // console.log("If I could be a normal girl, I would do my best to love this world.");
-        // console.log("*: 想要变成鹰的鱼。");
-        document.querySelector(".this-year").innerText = (new Date()).getFullYear();
-        var randbg = null;
-        var bgSrc = null;
-        var bgBlock = false;
-        var normal_title = document.title;
-        document.addEventListener('visibilitychange', function () {
-            if (document.visibilityState == "hidden") {
-                setTimeout(function () {
-                    document.title = "|ω・) 看不到我~看不到我~";
-                }, 3000);
-            } else {
-                document.title = "(っ °Д °;)っ 啊呀，被发现了！";
-                setTimeout(function () {
-                    document.title = normal_title;
-                }, 3000);
-            }
-        });
-        function getHitokoto() {
-            var xhr = new XMLHttpRequest();
-            xhr.open('get', 'https://v1.hitokoto.cn/?' + Math.random());
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4) {
-                    let data = JSON.parse(xhr.responseText);
-                    document.getElementById("hitokoto-content").innerText = data.hitokoto;
-                    document.getElementById("hitokoto-author").innerText = data.from;
-                }
-            }
-            xhr.send();
-        }
-        function handleRandBG(status) {
-            if (status.checked) {
-                if (!bgBlock) {
-                    bgBlock = true;
-                    var bgImage = new Image();
-                    bgImage.onload = (() => {
-                        bgBlock = false;
-                    });
-                    bgSrc = 'https://imgapi.lie.moe/random?host=od&' + String(Math.random());
-                    bgImage.src = bgSrc;
-                }
-                randbg = document.createElement("style");
-                randbg.innerText = 'html:before{background:url(' + bgSrc + ') no-repeat;background-size:cover;background-position:center 0;content:"";width:100%;height:100%;top:0;left:0;z-index:-1;position:fixed;}';
-                document.body.appendChild(randbg);
-            } else {
-                randbg.remove();
-            }
-        }
+      function showIt(node) {
+        document.body.style = null;
+        document.getElementById("mainc").style = null;
+        node.parentNode.parentNode.remove();
+      }
     </script>
+  </div>
+  <div class="main-container" id="mainc" style="display:none;">
+    <div class="section header grid-container">
+      <div class="picture-container grid-30">
+        <a href="https://about.lie.moe"><img class="picture" src="https://avatars.githubusercontent.com/u/64982342"></a>
+        <div class="greeting hitikoto" title="换一个~" style="width:100%;color:white;cursor:pointer;" onclick="getHitokoto()">
+          <p style="text-align:left;">『<span id="hitokoto-content">Loading…</span>』</p>
+          <p style="text-align:right;">——<span id="hitokoto-author">加载中~</span></p>
+        </div>
+      </div>
+      <div class="grid-70">
+        <h1 class="greeting en">Hi there, this is ZiAzusa!</h1>
+        <h1 class="greeting cn">
+          <small class="prefix"><span class="face">\(≧▽≦)/</span>你好！</small><span class="name no-wrap">我是梓漪！</span>
+        </h1>
+        <div class="labels">
+          <!--<a href="https://moeloli.cyou" target="_blank">
+            <div alt="home" class="label">
+              <i aria-hidden="true" class="fa fa-map-marker"></i>
+              <span class="title">MoeLoli Seeing You</span>
+            </div>
+          </a>-->
+          <a href="https://about.lie.moe" target="_blank">
+            <div alt="Home" class="label">
+              <i aria-hidden="true" class="fa fa-map-marker"></i>
+              <span class="title">Lie.Moe</span>
+            </div>
+          </a>
+          <div alt="Wallpaper" class="label">
+            <i aria-hidden="true" class="fa fa-photo" style="vertical-align:middle;"></i>
+            <span class="title">
+              <input type="checkbox" class="switch-button" id="switch-button" onclick="handleRandBG(this)">
+              <label for="switch-button" style="vertical-align:middle;"></label>
+            </span>
+          </div>
+        </div>
+        <div class="labels">
+          <div alt="Browser" class="label">
+            <i aria-hidden="true" class="fa fa-edge"></i>
+            <span class="content">Chromium</span>
+          </div>
+          <div alt="Editor" class="label">
+            <i aria-hidden="true" class="fa fa-pencil-square-o"></i>
+            <span class="content">VSCode</span>
+          </div>
+          <div alt="Indentation" class="label">
+            <i aria-hidden="true" class="fa fa-angle-double-right"></i>
+            <span class="content">4 Spaces</span>
+          </div>
+          <div alt="Whoami" class="label">
+            <i aria-hidden="true" class="fa fa-coffee"></i>
+            <span class="content">CTFer</span>
+          </div>
+          <div alt="Studying" class="label">
+            <i aria-hidden="true" class="fa fa-book"></i>
+            <span class="content">Web</span>
+          </div>
+
+        </div>
+        <div class="labels">
+          <div alt="Platforms" class="label">
+            <i aria-hidden="true" class="fa fa-windows"></i>
+            <span class="content">11</span>
+          </div>
+          <div class="label next">
+            <i aria-hidden="true" class="fa fa-apple"></i>
+            <span class="content">iOS</span>
+          </div>
+          <div class="label next">
+            <i aria-hidden="true" class="fa fa-android"></i>
+            <span class="content">Android</span>
+          </div>
+          <div class="label next">
+            <i aria-hidden="true" class="fa fa-linux"></i>
+            <span class="content">CentOS & Ubuntu</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section identity-category grid-container">
+      <h2 class="title">
+        <i aria-hidden="true" class="fa fa-chevron-right"></i> Me
+        <span class="no-wrap">
+          <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>ISFP</small>
+          <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>双子</small>
+          <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>乐子人</small>
+          <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>摆烂ing</small>
+        </span>
+      </h2>
+      <ul class="identities grid-50">
+        <div class="self-desc">
+          <p>
+            <b>(*^▽^*)也有人称呼我为梓、阿梓~</b>
+            <br />当然…叫“木辛”也不是不可以（？
+          </p>
+          <p>
+            <b>(｡･∀･)ﾉﾞ很高兴认识你！</b>
+            <br />我想成为一个温柔且坚定、平凡且自由的人类个体。
+            <!----愿人与人之间没有隔阂，愿世间的美好得以共享。-->
+          </p>
+          <p>
+            <b>♪(´▽｀)我是个什么样的人呢？</b>
+            <br />一切！兴趣使然！
+            <br />交友方面，个人觉得，友谊是相互的，需要尊重的，而且是要有长时间维持的过程。
+            <br />学习方面，我是一个会为了感兴趣的知识全力以赴的人。
+            <br />生活方面，嗯...能摆就摆（？
+            <br />诶嘿~
+          </p>
+        </div>
+      </ul>
+      <ul class="identities grid-50">
+        <div class="self-desc">
+          <p>
+            <b>欢迎来找我！</b>
+          </p>
+        </div>
+        <li class="identity">
+          <a href="https://blog.lie.moe" target="_blank">
+            <i aria-hidden="true" class="fa fa-rss"></i>
+            <span class="where">Blog</span>
+            <span class="link">梓漪の窝</span>
+          </a>
+        </li>
+        <li class="identity">
+          <a href="mailto:zi@lie.moe" target="_blank">
+            <i aria-hidden="true" class="fa fa-envelope"></i>
+            <span class="where">Mail</span>
+            <span class="link">zi@lie.moe</span>
+          </a>
+        </li>
+        <li class="identity">
+          <a href="https://github.com/ZiAzusa" target="_blank">
+            <i aria-hidden="true" class="fa fa-github"></i>
+            <span class="where">Github</span>
+            <span class="link">@ZiAzusa</span>
+          </a>
+        </li>
+        <li class="identity">
+          <a href="https://qm.qq.com/q/X9FUv9C6c4" target="_blank">
+            <i aria-hidden="true" class="fa fa-user"></i>
+            <span class="where">QQ</span>
+            <span class="link">2488955878</span>
+          </a>
+        </li>
+        <li class="identity">
+          <a href="https://space.bilibili.com/399757315" target="_blank">
+            <i aria-hidden="true" class="fa fa-tv"></i>
+            <span class="where">Bilibili</span>
+            <span class="link">霜泛梓桁</span>
+          </a>
+        </li>
+        <li class="identity">
+          <a href="https://233azusa.lofter.com" target="_blank">
+            <i aria-hidden="true" class="fa fa-book"></i>
+            <span class="where">Lofter</span>
+            <span class="link">魂归梓里</span>
+          </a>
+        </li>
+        <!--<li class="identity">
+          <a href="https://intro.lie.moe" target="_blank">
+            <i aria-hidden="true" class="fa fa-tag"></i>
+            <span class="where">More About My GitHub</span>
+            <span class="link"></span>
+          </a>
+        </li>-->
+      </ul>
+    </div>
+    <div class="section identity-category grid-container">
+      <h2 class="title">
+        <i aria-hidden="true" class="fa fa-chevron-right"></i> Be Into Everything!
+        <span class="no-wrap">
+          <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>Moe</small>
+          <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>ACGN</small>
+          <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>Computer Science</small>
+        </span>
+      </h2>
+      <ul class="identities grid-50">
+        <div class="self-desc">
+          <p>
+            <b>我玩：</b>
+            <br />明日方舟 / Project Sekai / BanG Dream! / 崩坏：星穹铁道 / 绝区零 / 蔚蓝档案 / 重返未来：1999 / Minecraft / Phigros / Arcaea / Rotaeno ...
+          </p>
+        </div>
+        <div class="self-desc">
+          <p>
+            <b>我推：</b>
+            <br />25点，Nightcord见 [晓山瑞希 / 宵崎奏 / 东云绘名 / 朝比奈真冬] / Ave Mujica [丰川祥子 / 若叶睦] / MyGO!!!!! [高松灯 / 千早爱音] / 美树沙耶香 / 佐仓杏子 / 铃兰 / 绮良 / 艾雅法拉 / 水月 / 青衣 / 可莉 / 芙宁娜 / 七七 / 白洲梓 / 37 / 乐正绫 / 洛天依 / 可不 / 初音未来 ...
+            <br />// 你能回到过去，救救那个还没看Ave Mujica的我吗...
+            <br />// 诶不是，这家伙怎么见一个爱一个？
+          </p>
+        </div>
+      </ul>
+      <ul class="identities grid-50">
+        <div class="self-desc">
+          <p>
+            <b>我可能会分享：</b>
+            <br />发癫 / 发病 / 摘抄 / 美图 / 日常 / oc / cos ...
+          </p>
+        </div>
+        <div class="self-desc">
+          <p>
+            <b>我正在学习：</b>
+            <br />CTF Web方向&Misc方向 / Golang / JavaScript / Vue / CSS / 板绘 ...
+            <br />// Stay hungry, stay foolish.
+          </p>
+        </div>
+      </ul>
+    </div>
+    <div class="section identity-category grid-container">
+      <h2 class="title">
+        <i aria-hidden="true" class="fa fa-chevron-right"></i> No Game No Life!
+        <span class="no-wrap">
+          <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>Otaku</small>
+          <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>音游人</small>
+          <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>单机</small>
+        </span>
+      </h2>
+      <ul class="identities grid-50">
+        <!--<li class="identity">
+          <a href="https://www.taptap.cn/user/356934468" target="_blank">
+            <i aria-hidden="true" class="fa fa-share-alt"></i>
+            <span class="where">TapTap<span class="status"> 国区</span></span>
+            <span class="link">356934468</span>
+          </a>
+        </li>-->
+        <li class="identity">
+          <i aria-hidden="true" class="fa fa-mobile"></i>
+          <span class="where">崩坏：星穹铁道<span class="status"> 官服</span></span>
+          <span class="link">142647586</span>
+        </li>
+        <li class="identity">
+          <i aria-hidden="true" class="fa fa-mobile"></i>
+          <span class="where">原神<span class="status"> 官服</span></span>
+          <span class="link">179260453</span>
+        </li>
+        <!--<li class="identity">
+          <i aria-hidden="true" class="fa fa-mobile"></i>
+          <span class="where">蔚蓝档案<span class="status"> 国际服</span></span>
+          <span class="link"></span>
+        </li>-->
+        <li class="identity">
+          <i aria-hidden="true" class="fa fa-mobile"></i>
+          <span class="where">明日方舟<span class="status"> 官服</span></span>
+          <span class="link">梓漪#9201</span>
+        </li>
+        <li class="identity">
+          <i aria-hidden="true" class="fa fa-mobile"></i>
+          <span class="where">绝区零<span class="status"> 官服</span></span>
+          <span class="link">22371920</span>
+        </li>
+        <!--<li class="identity">
+          <i aria-hidden="true" class="fa fa-mobile"></i>
+          <span class="where">战双帕弥什<span class="status"> 官服</span></span>
+          <span class="link">41492255</span>
+        </li>-->
+      </ul>
+      <ul class="identities grid-50">
+        <li class="identity">
+          <a href="https://steamcommunity.com/id/ziazusa/" target="_blank">
+            <i aria-hidden="true" class="fa fa-steam"></i>
+            <span class="where">Steam<span class="status"> 国区</span></span>
+            <span class="link">魂归梓里</span>
+          </a>
+        </li>
+        <li class="identity">
+          <i aria-hidden="true" class="fa fa-music"></i>
+          <span class="where">Arcaea<span class="status"> PTT:10.21</span></span>
+          <span class="link">ZiAzusa</span>
+        </li>
+        <li class="identity">
+          <i aria-hidden="true" class="fa fa-music"></i>
+          <span class="where">Phigros<span class="status"> RKS:14.09</span></span>
+          <span class="link">梓酱Azusa</span>
+        </li>
+        <li class="identity">
+          <i aria-hidden="true" class="fa fa-music"></i>
+          <span class="where">Project Sekai<span class="status"> 国服</span></span>
+          <span class="link">7490204973431626511</span>
+        </li>
+      </ul>
+    </div>
+    <!--<div class="section identity-category grid-container">
+      <ul class="identities grid-50">
+        <div class="self-desc">
+          <p>
+            <b>所以...我这辈子究竟说过多少谎言？又有多少真话呢？</b>
+            <br /><a href="https://lie.moe" target="_blank" style="color:#519bff;">萌える嘘。</a>
+          </p>
+        </div>
+      </ul>
+    </div>-->
+    <div class="section">
+      <div class="acknowledgementA"><i aria-hidden="true" class="fa fa-code-fork"></i>
+        This is a fork of <a href="//github.com/amphineko/amphineko" target="_blank"><span class="link">futa.moe/amphineko</span></a>, a biopage by Naoki Rinmous.
+      </div>
+      <div class="acknowledgementB"><i aria-hidden="true" class="fa fa-plug" style="font-size:smaller;"></i>
+        Some functions powered by these APIs, thanks. Wallpaper: <a href="//imgapi.lie.moe/help" target="_blank"><span class="link">萌える嘘</span></a>; Saying: <a href="//hitokoto.cn" target="_blank"><span class="link">Hitokoto</span></a>.
+        <!--Page's style referred to <a href="//about.moe.best" target="_blank"><span class="link">about.moe.best</span></a>, if something is forbidden, please contact me to remove.-->
+      </div>
+      <div class="acknowledgementC"><!--<i aria-hidden="true" class="fa fa-copy" style="font-size:smaller;"></i>-->
+        Copyright &copy; 2018-<span class="this-year">Now</span>: ZiAzusa. All Rights Reserved. Illustrations have their own licenses.
+        <br />Registration:
+        <a href="https://icp.gov.moe/?keyword=20233366" target="_blank" style="color:#444444;">萌ICP备20233366号</a>
+      </div>
+      <!--<div class="copyright"></div>-->
+    </div>
+  </div>
+  <script src="/scripts/about/main.js"></script>
 </body>
 </html>
