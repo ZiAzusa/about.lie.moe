@@ -4,120 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>友情链接</title>
-  <style>
-    body {
-      font-family: "Segoe UI", "PingFang SC", sans-serif;
-      background: #f5f7fa;
-      margin: 0;
-      padding: 40px 20px;
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            theme: {
+              blue: '#3B82F6',
+              purple: '#8B5CF6',
+              green: '#10B981',
+              orange: '#F97316',
+              pink: '#EC4899',
+            },
+            neutral: '#64748B',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
     }
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-weight: 600;
-      color: #333;
-    }
-    .links {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      text-decoration: none;
-      color: inherit;
-      transition: all 0.25s ease;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      padding: 20px;
-    }
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    }
-    .card.column {
-      flex-direction: column;
-      text-align: center;
-    }
-    .avatar, img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
-    .name {
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 6px;
-      color: #222;
-    }
-    .slogan, .intro-text div {
-      font-size: 14px;
-      color: #666;
-    }
-    .intro-text {
-      flex: 1;
-      font-size: 14px;
-      color: #333;
-    }
-    .intro-text .row {
-      margin-bottom: 6px;
-    }
-    .intro-text .label {
-      font-weight: 600;
-      margin-right: 6px;
-      color: #222;
-    }
-    .intro-text a {
-      color: #0078d7;
-      text-decoration: none;
-    }
-    .intro-text a:hover {
-      text-decoration: underline;
-    }
-    .intro {
-      grid-column: 1 / -1;
-      gap: 20px;
-    }
-    @media (max-width: 550px) {
-      .intro {
-        display: none;
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+      .card-shadow {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      }
+      .card-shadow-hover {
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
       }
     }
   </style>
 </head>
-<body>
-  <h1>友情链接</h1>
-  <div class="links">
-    <div class="card intro">
-      <img src="https://avatars.githubusercontent.com/u/64982342?v=4" alt="avatar">
-      <div class="intro-text">
-        <div class="row"><span class="label">名称：</span>霜凝梓漪，雪偕遥泠</div>
-        <div class="row"><span class="label">链接：</span><a href="https://about.lie.moe" target="_blank">https://about.lie.moe</a></div>
-        <div class="row"><span class="label">描述：</span>我想成为一个温柔且坚定、平凡且自由的人类个体。</div>
-        <div class="row"><span class="label">头像：</span><a href="https://avatars.githubusercontent.com/u/64982342" target="_blank">https://avatars.githubusercontent.com/u/64982342</a></div>
+<body class="bg-gray-50 min-h-screen font-sans text-gray-800">
+  <div class="container mx-auto px-4 py-12 max-w-5xl">
+    <header class="text-center mb-12">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">友情链接</h1>
+    </header>
+    <div class="grid grid-cols-1 gap-6">
+      <div id="intro-card" class="bg-white rounded-xl p-6 card-shadow hover:card-shadow-hover transition-all duration-300">
+        <div id="intro-avatar-container" class="flex-shrink-0 mb-6 mr-0">
+          <img src="https://avatars.githubusercontent.com/u/64982342?v=4" alt="头像" 
+               class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-lg mx-auto">
+        </div>
+        <div id="intro-info-container" class="flex-1 grid grid-cols-1 gap-4">
+          <div>
+            <div class="flex items-center text-sm font-semibold text-neutral mb-1">
+              <i class="fa fa-user text-theme-blue mr-2"></i>
+              <span>标题</span>
+            </div>
+            <p>霜凝梓漪，雪偕遥泠</p>
+          </div>
+          <div>
+            <div class="flex items-center text-sm font-semibold text-neutral mb-1">
+              <i class="fa fa-quote-left text-theme-blue mr-2"></i>
+              <span>描述</span>
+            </div>
+            <p class="text-gray-600">我想成为一个温柔且坚定、平凡且自由的人类个体。</p>
+          </div>
+          <div>
+            <div class="flex items-center text-sm font-semibold text-neutral mb-1">
+              <i class="fa fa-link text-theme-blue mr-2"></i>
+              <span>链接</span>
+            </div>
+            <a href="https://about.lie.moe" target="_blank" class="text-theme-blue hover:underline">about.lie.moe</a>
+          </div>
+          <div>
+            <div class="flex items-center text-sm font-semibold text-neutral mb-1">
+              <i class="fa fa-image text-theme-blue mr-2"></i>
+              <span>头像</span>
+            </div>
+            <a href="https://avatars.githubusercontent.com/u/64982342" target="_blank" class="text-theme-blue hover:underline break-all">https://avatars.githubusercontent.com/u/64982342</a>
+          </div>
+        </div>
       </div>
+      <div id="links-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
     </div>
-    <a class="card column" href="https://www.iyoroy.cn/" target="_blank">
-      <img class="avatar" src="https://www.iyoroy.cn/usr/uploads/2025/07/1725584663.jpg" alt="avatar">
-      <div>
-        <div class="name">悠笙の开发日记</div>
-        <div class="slogan">『愿世间万物都能被温柔以待』</div>
-      </div>
-    </a>
-    <a class="card column" href="https://ceale.moe/" target="_blank">
-      <img class="avatar" src="https://avatars.githubusercontent.com/u/93030615?v=4" alt="avatar">
-      <div>
-        <div class="name">筱莱Ceale的摇曳时间</div>
-        <div class="slogan">『也许是只绵羊（？）』</div>
-      </div>
-    </a>
+    <footer class="mt-16 text-center">
+      <button onclick="window.history.back()" class="inline-flex items-center text-sm text-theme-blue hover:underline transition-colors duration-300">
+        <i class="fa fa-arrow-left mr-2"></i>
+        <span>返回之前的页面</span>
+      </button>
+    </footer>
   </div>
+  <script src="/scripts/friends/list.js"></script>
+  <script src="/scripts/friends/main.js"></script>
 </body>
 </html>
