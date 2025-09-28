@@ -28,21 +28,23 @@
       background: #fff;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      text-align: center;
-      padding: 20px;
-      transition: all 0.25s ease;
-      cursor: pointer;
       text-decoration: none;
       color: inherit;
+      transition: all 0.25s ease;
+      cursor: pointer;
       display: flex;
-      flex-direction: column;
       align-items: center;
+      padding: 20px;
     }
     .card:hover {
       transform: translateY(-6px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     }
-    .avatar, .intro-card img {
+    .card.column {
+      flex-direction: column;
+      text-align: center;
+    }
+    .avatar, img {
       width: 80px;
       height: 80px;
       border-radius: 50%;
@@ -61,7 +63,6 @@
     }
     .intro-text {
       flex: 1;
-      text-align: left;
       font-size: 14px;
       color: #333;
     }
@@ -80,14 +81,12 @@
     .intro-text a:hover {
       text-decoration: underline;
     }
-    .intro-card {
+    .intro {
       grid-column: 1 / -1;
-      flex-direction: row;
-      align-items: center;
       gap: 20px;
     }
     @media (max-width: 600px) {
-      .intro-card {
+      .intro {
         display: none;
       }
     }
@@ -96,7 +95,7 @@
 <body>
   <h1>友情链接</h1>
   <div class="links">
-    <div class="intro-card card">
+    <div class="card intro">
       <img src="https://avatars.githubusercontent.com/u/64982342?v=4" alt="avatar">
       <div class="intro-text">
         <div class="row"><span class="label">名称：</span>霜凝梓漪，雪偕遥泠</div>
@@ -105,14 +104,14 @@
         <div class="row"><span class="label">头像：</span><a href="https://avatars.githubusercontent.com/u/64982342?v=4" target="_blank">https://avatars.githubusercontent.com/u/64982342?v=4</a></div>
       </div>
     </div>
-    <a class="card" href="https://www.iyoroy.cn/" target="_blank">
+    <a class="card column" href="https://www.iyoroy.cn/" target="_blank">
       <img class="avatar" src="https://www.iyoroy.cn/usr/uploads/2025/07/1725584663.jpg" alt="avatar">
       <div>
         <div class="name">悠笙の开发日记</div>
         <div class="slogan">『愿世间万物都能被温柔以待』</div>
       </div>
     </a>
-    <a class="card" href="https://ceale.moe/" target="_blank">
+    <a class="card column" href="https://ceale.moe/" target="_blank">
       <img class="avatar" src="https://avatars.githubusercontent.com/u/93030615?v=4" alt="avatar">
       <div>
         <div class="name">筱莱Ceale的摇曳时间</div>
