@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -16,6 +16,44 @@
       margin-bottom: 30px;
       font-weight: 600;
       color: #333;
+    }
+    .intro-card {
+      max-width: 1000px;
+      margin: 0 auto 30px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .intro-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .intro-text {
+      flex: 1;
+      font-size: 15px;
+      color: #333;
+    }
+    .intro-text .row {
+      margin-bottom: 8px;
+    }
+    .intro-text .label {
+      font-weight: 600;
+      margin-right: 6px;
+      color: #222;
+    }
+    .intro-text a {
+      color: #0078d7;
+      text-decoration: none;
+    }
+    .intro-text a:hover {
+      text-decoration: underline;
     }
     .links {
       display: grid;
@@ -60,9 +98,18 @@
 </head>
 <body>
   <h1>友情链接</h1>
+  <div class="intro-card">
+    <img src="https://avatars.githubusercontent.com/u/64982342?v=4" alt="avatar">
+    <div class="intro-text">
+      <div class="row"><span class="label">名称：</span>霜凝梓漪，雪偕遥泠</div>
+      <div class="row"><span class="label">链接：</span><a href="https://about.lie.moe" target="_blank">https://about.lie.moe</a></div>
+      <div class="row"><span class="label">描述：</span>愿世间万物都能被温柔以待</div>
+      <div class="row"><span class="label">头像链接：</span><a href="https://avatars.githubusercontent.com/u/64982342?v=4" target="_blank">https://avatars.githubusercontent.com/u/64982342?v=4</a></div>
+    </div>
+  </div>
   <div class="links">
     <a class="card" href="https://www.iyoroy.cn/" target="_blank">
-      <img class="avatar" src="https://www.iyoroy.cn/usr/uploads/2025/01/748697872.png" alt="avatar">
+      <img class="avatar" src="https://www.iyoroy.cn/usr/uploads/2025/07/1725584663.jpg" alt="avatar">
       <div class="name">悠笙の开发日记</div>
       <div class="slogan">『愿世间万物都能被温柔以待』</div>
     </a>
