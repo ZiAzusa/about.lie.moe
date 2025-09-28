@@ -37,14 +37,11 @@ function renderLinksCards() {
       <a href="${link.url}" target="_blank" class="block group">
         <div class="bg-white rounded-xl p-6 card-shadow hover:card-shadow-hover transition-all duration-300 h-full flex flex-col items-center text-center">
           <div class="relative mb-4">
-            <img src="${link.avatar}" alt="${link.name}" 
-                 class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-md group-hover:scale-105 transition-transform duration-300" />
+            <img src="${link.avatar}" alt="${link.name}" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-md group-hover:scale-105 transition-transform duration-300" />
             <div class="absolute inset-0 bg-gradient-to-tr from-${themeColor}/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
-          
           <h3 class="text-xl font-bold mb-2 group-hover:text-${themeColor} transition-colors duration-300">${link.name}</h3>
           <p class="text-neutral">『${link.slogan}』</p>
-          
           <div class="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
             <span class="inline-flex items-center text-sm text-${themeColor}">
               <span>访问</span>
