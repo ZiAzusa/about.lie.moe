@@ -55,7 +55,7 @@ function renderLinksCards() {
   });
   adjustIntroLayout();
 }
-function backToPreviousPage() {
+function backToPrevious() {
   if (window.history.length > 1) {
     window.history.back();
     return;
