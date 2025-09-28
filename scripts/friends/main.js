@@ -43,7 +43,7 @@ function renderLinksCards() {
           </div>
           
           <h3 class="text-xl font-bold mb-2 group-hover:text-${themeColor} transition-colors duration-300">${link.name}</h3>
-          <p class="text-neutral italic">『${link.slogan}』</p>
+          <p class="text-neutral">『${link.slogan}』</p>
           
           <div class="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
             <span class="inline-flex items-center text-sm text-${themeColor}">
