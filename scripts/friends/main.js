@@ -55,5 +55,23 @@ function renderLinksCards() {
   });
   adjustIntroLayout();
 }
+function backToPreviousPage() {
+  if (window.history.length > 1) {
+    window.history.back();
+    return;
+  }
+  if (window.opener && window.opener.location) {
+    window.location.href = window.opener.location.href;
+    return;
+  }
+  try {
+    window.close();
+    setTimeout(function() {
+      if (window.length === 0) window.location.href = '/';
+    }, 500);
+  } catch (e) {
+    window.location.href = '/';
+  }
+}
 document.addEventListener('DOMContentLoaded', renderLinksCards);
 window.addEventListener('resize', adjustIntroLayout);
